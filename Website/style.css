@@ -1,0 +1,82 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+body {
+    background-color: #05050a;
+    color: #ffffff;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container – flex row, centres all boxes */
+#gaugeContainer {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Each gauge box */
+#tempBox, #humBox, #weatherBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 160px;
+    border-radius: 12px;
+    background-color: rgba(5, 5, 10, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+/* Titles */
+#tempTitle, #humTitle, #weatherTitle {
+    font-size: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Value screens */
+#tempScreen, #humScreen, #weatherPrediction {
+    font-size: 45px;
+    font-family: 'Orbitron', monospace;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+/* --- Temperature (Red Neon) --- */
+#tempTitle { color: rgba(255, 51, 51, 0.6); }
+#tempScreen {
+    color: #ff3333;
+    border: 1px solid rgba(255, 51, 51, 0.25);
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.1), inset 0 0 15px rgba(255, 51, 51, 0.03);
+    text-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
+}
+
+/* --- Humidity (Green Neon) --- */
+#humTitle { color: rgba(57, 255, 20, 0.6); }
+#humScreen {
+    color: #39ff14;
+    border: 1px solid rgba(57, 255, 20, 0.25);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.1), inset 0 0 15px rgba(57, 255, 20, 0.03);
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+}
+
+/* --- Weather Prediction (Cyan/Blue Neon) --- */
+#weatherTitle { color: rgba(0, 255, 255, 0.6); }
+#weatherPrediction {
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1), inset 0 0 15px rgba(0, 255, 255, 0.03);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}

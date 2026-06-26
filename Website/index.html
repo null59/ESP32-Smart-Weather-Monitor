@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature & Humidity Gauges</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="gaugeContainer">
+
+    <!-- Temperature box -->
+    <div id="tempBox">
+      <div id="tempTitle">Temperature</div>
+      <div id="tempScreen">0°C</div>
+    </div>
+
+    <!-- Humidity box -->
+    <div id="humBox">
+      <div id="humTitle">Humidity</div>
+      <div id="humScreen">0%</div>
+    </div>
+
+    <!-- Weather prediction box (new) -->
+    <div id="weatherBox">
+      <div id="weatherTitle">Condition</div>
+      <div id="weatherPrediction">--</div>
+    </div>
+
+  </div>
+
+  <!-- Firebase compat SDKs (all three) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
